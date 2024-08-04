@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: "{{ .Values.name }}-svc"
+  name: "{{ .Values.NAME }}-svc"
   namespace: "{{ .Values.NAMESPACE }}"
 spec:
   type: ClusterIP
@@ -13,4 +13,3 @@ spec:
   - port: 3306
     targetPort: 3306
     protocol: TCP
-  
